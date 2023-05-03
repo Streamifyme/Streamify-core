@@ -87,6 +87,13 @@ module.exports = {
       timeoutBlocks: 200,
       skipDryRun: true
     },
+    fevm: {
+      provider: () => new HDWalletProvider(process.env.MNENOMIC, 'https://api.hyperspace.node.glif.io/rpc/v1'),
+      network_id: 3141,
+      confirmations: 2,
+      timeoutBlocks: 200,
+      skipDryRun: true      
+    }
 
   },
 
